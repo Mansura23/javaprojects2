@@ -35,6 +35,7 @@ public class Arrays2 {
                 if (jaggedArr[i][j] > maxNum) {
                     maxNum = jaggedArr[i][j];
                 }
+                maxNum=Math.max(maxNum, jaggedArr[i][j]);
 
 
             }
