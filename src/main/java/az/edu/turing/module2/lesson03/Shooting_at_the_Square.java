@@ -10,9 +10,8 @@ public class Shooting_at_the_Square {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         char[][] arr = CreateArr();
-        int targetrow = random.nextInt(5)+1;
-        int targetcol = random.nextInt(5)+1;
-
+        int targetrow = random.nextInt(5) + 1;
+        int targetcol = random.nextInt(5) + 1;
 
 
         while (true) {
@@ -38,7 +37,7 @@ public class Shooting_at_the_Square {
 
     public static char[][] CreateArr() {
         char[][] arr = new char[5][5];
-        for (int i = 0; i <arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 arr[i][j] = '-';
 
@@ -83,7 +82,7 @@ public class Shooting_at_the_Square {
         }
         System.out.println();
         for (int i = 0; i < arr.length; i++) {
-            System.out.print((i+1) + " | ");
+            System.out.print((i + 1) + " | ");
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j] + " | ");
 
